@@ -1,0 +1,52 @@
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 360px;
+  height: 320px;
+  padding: 24px;
+  background-color: #fff;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  background-color: #e6f0ff;
+}
+
+.card .title {
+  color: #262c40;
+  text-align: center;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: #0a2540;
+}
+
+.card .contact {
+  display: flex;
+  align-items: center;
+  color: #8189a3;
+  transition: color 0.3s ease;
+}
+
+.contact img {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .contact img {
+  transform: scale(1.1);
+}

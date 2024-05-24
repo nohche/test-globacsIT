@@ -1,0 +1,88 @@
+.userDetailsContainer {
+    position: fixed;
+    background-color: rgba(16, 17, 17, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+  }
+  
+  .userDetailsBody {
+    width: 500px;
+    padding: 24px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 0.3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .userDetailsBody .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .userDetailsBody button {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .userDetailsBody .info {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .info div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info .label {
+    font-weight: bold;
+    text-align: left;
+    width: 40%;
+  }
+  
+  .info .value {
+    width: 60%;
+  }
+  
+  .additionalInfo h3 {
+    margin-bottom: 10px;
+  }
+  
+  .additionalInfo span {
+    display: block;
+    line-height: 1.5;
+    color: #666;
+  }
+  
